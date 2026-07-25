@@ -947,12 +947,12 @@ function confessSins() {
     selectedSins.clear();
     localStorage.removeItem('examinationSelections');
     
-    // Return to main page after 3 seconds
+    // Return to main page after 10 seconds
     setTimeout(() => {
         modal.classList.remove('active');
         showPage(1);
         renderQuestions();
-    }, 3000);
+    }, 10000);
 }
 
 // ========================================
